@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>pipipoopoo</title>
+
+  </head>
+  <body>
+    <div id="cabecalho">
+      <h1>Checkout</h1>
+      <p>3 Items</p>
+    </div>
+      <div id="caixa-grande">
+        <div id="lado-esquerdo">
+          <div id="produtos">
+            <div id="iPhone">
+              <img src="resources/Gold.png" id="imag-prod">
+              <p class="Nome">iPhone 12 Pro</p>
+              <p class="cor">Golden</p>
+              <p class="preco">$999.00</p>
+              <p class="quantidade">x 1</p>
+              <button class="retirar">X</button>
+            </div>
+            <div id="A-Watch">
+              <img src="resources/Apple-watch.png" id="imag-prod">
+              <p class="Nome">Apple Watch</p>
+              <p class="cor">Blue</p>
+              <p class="preco">$399.00</p>
+              <p class="quantidade">x 1</p>
+              <button class="retirar">X</button>
+            </div>
+            <div id="iMac">
+              <img src="resources/iMac.png" id="imag-prod">
+              <p class="Nome">iMac</p>
+              <p class="cor">Green</p>
+              <p class="preco">$1199.00</p>
+              <p class="quantidade">x 1</p>
+              <button class="retirar">X</button>
+            </div>
+          </div>
+          <div id="coupon">
+            <input type="text" placeholder="Enter coupon code">
+            <button id="butao-coupon">Apply Coupon</button>
+          </div>
+          <div id="precos">
+            <p class="nbold">Sub total</p>
+            <p class="nbold">$2597.00</p>
+            <p class="nbold">Tax</p>
+            <p class="nbold">$623.28</p>
+            <p class="bold">Total</p>
+            <p class="bold">$3220.28</p>
+          </div>
+        </div>
+        <div id="lado-direito">
+          <p class="Cinfo">Client information</p>
+          <p class="smallText">First & Last Name</p>
+          <input type="text" placeholder="Enter first & last name">
+          <p class="smallText">Email Address</p>
+          <input type="text" placeholder="Enter email address">
+          <p class="smallText">Country</p>
+          <select id="paises">
+            <option>Portugal</option>
+            <option>Spain</option>
+            <option>Finland</option>
+          </select>
+          <p class="smallText">Postal Code</p>
+          <input type="text" placeholder="Enter postal code">
+          <button class="continuar">Continue</button>
+        </div>
+      </div>
+  </body>
+</html>

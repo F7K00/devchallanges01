@@ -1,0 +1,202 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:url('resources/background-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    height: 100%;
+    justify-content: flex;
+    flex-direction: column;
+    margin: 0;
+    padding 0;
+
+
+}
+#cabecalho{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    color: white;
+
+}
+
+#cabecalho h1{
+    font-size:40px;
+    font-weight: 600;
+    color: white;
+}
+
+#cabecalho p{
+    font-size: normal;
+    font-weight: 400;
+    border-radius:4px ;
+    background: black;
+    opacity: 50%;
+    margin: 0;
+    display: inline-block;
+}
+
+#caixa-grande{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    background-color:white;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#lado-direito,#lado-esquerdo{
+    flex:1;
+    padding:0 15px;
+    overflow-y: auto;
+}
+
+#lado-esquerdo{
+    height: 100vh;
+    margin: 0;
+    display:grid;
+    height: 100%;
+    background-color: gainsboro;
+    border-radius: 8px;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 30px;
+    gap:22px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+#iPhone,#iMac,#A-Watch{
+    display:flex;
+    align-items: flex-start;
+    margin: 5px;
+    border:5px;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 100%;
+    gap: 20px;
+}
+
+#precos{
+    display:grid;
+    grid-template-columns: 1fr 12rem;
+    grid-template-rows: repeat(3,1fr);
+    gap: 0px;
+    padding: 0;
+}
+#precos p:nth-child(even){
+    text-align: right;
+}
+
+#iPhone img ,#iMac img , #A-Watch img{
+    width: 80px;
+    height: 80px;
+    background-color:white;
+    padding :5px;
+    object-fit: contain;
+    border-radius: 8px;
+
+}
+
+#produtos > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 7px;
+  }
+
+.Nome {
+    font-weight: bold;
+    flex: 1;
+  }
+  
+.cor,.preco,.quantidade {
+    font-size: 14px;
+    color: #555;
+  }
+  
+.retirar {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+#coupon {
+    display: flex;
+    gap: 15px;
+    margin: 0px 0;
+  }
+  
+#coupon input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+#butao-coupon {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+.nbold {
+    color: #555;
+  }
+  
+.bold {
+    font-weight: bold;
+  }
+
+#lado-direito {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(243, 239, 239, 0.753);
+    border-radius: 8px;
+  }
+
+  .Cinfo {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .smallText {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  #lado-direito input,
+  #paises {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .continuar {
+    margin-top: 20px;
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
